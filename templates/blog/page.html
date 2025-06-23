@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--spacing);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+        }
+
+        article img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        article h2,
+        article h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .meta {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav><a href="/">← Back to Home</a></nav>
+
+        <h1>{{ title }}</h1>
+        <article>
+            {{content | safe }}
+        </article>
+    </div>
+</body>
+
+</html>

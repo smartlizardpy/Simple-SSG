@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--spacing);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+        }
+
+        article img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        article h2,
+        article h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .meta {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav><a href="/">← Back to Home</a></nav>
+
+        <h1>Projects</h1>
+        <article>
+            <p>A few of my favorite design &amp; coding projects so far:</p>
+<hr />
+<h2>🚧 VEX IQ Robotics</h2>
+<p>In our first year in the Vex IQ ecosystem we went to the competitions in Türkiye. We where new to its kits. First we built the sample robot for the competitons. And start to develop the robot to a 2 shooter robot. It was the most advanced in its leauge. So we went to 3 competitons and got an invitation to the country finals in the last competition. You can learn more about our robot &amp; our team at our team website.</p>
+<p><a href="https://bilbots.pages.dev">Visit the Vex IQ Team Website</a></p>
+<h2>Vex IQ Team Website</h2>
+<p>Yeah! I built my team website. I decided to go on a basic and modern MD look for it. It was basic. We used a tech stack of Astro &amp; Cloudflare Pages. It was basic. It had a link to our youtube channel which you should go check out! I roughly built the first version in 2 Hours and it sucked so i cleaned it up and polished it which ended up taking 4-5 hours of work. That i spread in to 2 days. You can check out the source code of the website. I need to warn you because its like spagetti!
+<a href="https://github.com/smartlizardpy/bilbots">Source Code</a></p>
+<p><a href="https://bilbots.pages.dev">Website</a></p>
+<hr />
+<h2>Concert Website 1.0</h2>
+<p>This is the first version of the concert website. My neighbour is a piano &amp; violin teacher and she organises concerts where her students play. I decided to create a website that shows live who is playing and which song is that. So i embarked on a journey to make that idea happen. My tech stack involves of Html ,css ,js &amp; the backend is Supabase. It uses the realtime api. There is a JSON that has the concert data we select the performer and send it to the DB and change the data to the realtime api.
+For the privacy of the students I cannot share the  the link of the website.
+<a href="https://github.com/smartlizardpy/konser">Source Code</a></p>
+<hr />
+<h2>Concert Website 2.0</h2>
+<p>This is the second one of the concert website. My neighbour is a piano &amp; violin teacher and she organises concerts where her students play. I decided to create a website that displays the name of the performers and the songs they are playing. It has a embedded live stream of the concert.The tech stack uses Vue, Tailwind &amp; Cloudflare Pages . I also needed to genererate a graphics system for the live stream. I created it from scratch.</p>
+<h3>Graphics System 1.0</h3>
+<p>This uses a html lower third and conncets to the flask and  websocket backend. it send performer data to the html and as a browser source to OBS.</p>
+<h3>Graphics System 2.0</h3>
+<p>I used Nodecg and incorperated the json of the concert.
+It was nice and 80 people watched the stream</p>
+<hr />
+<h2>Cousins Bio Website</h2>
+<p>My first website. It was for my cousin who is a football player. I didn't knew anything about HTML&amp;CSS so I opened notepad++ and started to write code and look from w3 schools. I didnt change it for to see my mistakes. I tried to change styles of individual  images by "&lt;img1" "&lt;img2" etc.
+It was a bio for him. I wanted to add it to my projects part because i wanted to add when I first started how I wrote html.</p>
+<p><a href="https://smartlizardpy.github.io">Website</a>  </p>
+<p><a href="https://github.com/smartlizardpy/batuilgac">Source Code 🙄</a></p>
+        </article>
+    </div>
+</body>
+
+</html>

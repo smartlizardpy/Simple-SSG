@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: var(--spacing);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--link);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1,
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .post {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .post .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .post p {
+            margin-top: 0.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .post .meta {
+                color: #aaa;
+            }
+        }
+        a{
+            color: var(--link);
+            text-decoration: none;
+        }
+        .img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        img{
+            max-width: 50%;
+            max-height: 50%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <h1>{{ title }}</h1>
+        <img  class ="img" src="/static/ozan.jpg" alt="Blog Image" />
+        <h5>{{ desc }}</h5>
+        <nav>
+            {% for item in nav %}
+            <a href="{{ item.url }}">{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+        <div>
+            {{content}}
+        </div>
+        <h2>Recent Posts</h2>
+        {% for post in posts %}
+        <div class="post">
+            
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.summary }}</p>
+            <div class="meta">{{ post.date }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    <p>© 2025 Ozan Kaygusuz – All Rights Reserved
+    </p>
+</body>
+
+</html>

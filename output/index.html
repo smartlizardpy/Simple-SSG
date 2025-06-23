@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ozan Kaygusuz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: var(--spacing);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--link);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1,
+        h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .post {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .post .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .post p {
+            margin-top: 0.5rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .post .meta {
+                color: #aaa;
+            }
+        }
+        a{
+            color: var(--link);
+            text-decoration: none;
+        }
+        .img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        img{
+            max-width: 50%;
+            max-height: 50%;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <h1>Ozan Kaygusuz</h1>
+        <img  class ="img" src="/static/ozan.jpg" alt="Blog Image" />
+        <h5>Designer, Developer & Photographer</h5>
+        <nav>
+            
+            <a href="/">Home</a>
+            
+            <a href="/projects.html">Projects</a>
+            
+        </nav>
+        <div>
+            <h2>👋 Hi, I'm Ozan</h2>
+<p>I’m 13, but don’t let the age fool you — I already build real projects using Vue.js, JavaScript, and Python.</p>
+<p>Coding isn't just a hobby — it's how I bring ideas to life. I love creating websites, apps, and fun side projects that challenge me to learn more every day.</p>
+<p>Outside of tech, I'm into photography, gaming, and exploring new creative stuff.</p>
+<p><a href="/projects.html">See Projects</a></p>
+<h2>🚀 Projects</h2>
+<p>Here are a few projects I've worked on:</p>
+<h3>VEX IQ Robotics</h3>
+<p><a href="/projects.html">More info</a></p>
+<h3>BilBots Site</h3>
+<p><a href="/projects.html">More info</a></p>
+<h3>Concert Website</h3>
+<p><a href="/projects.html">More info</a></p>
+<h2>📸 Photography</h2>
+<p>My photography journey started with my dad’s Nikon D3300.</p>
+<p>At first, I was just curious. I started learning little by little — how lighting changes everything, how angles can tell a different story, and how editing brings a photo to life.</p>
+<p>Whether it’s nature, random street shots, or just cool vibes with friends — I love capturing moments that feel real.</p>
+<h2>🥁 Drumming</h2>
+<p>I've been drumming since I was 6 years old. Playing drums lets me express creativity in a whole new way, and I enjoy experimenting with different rhythms and styles — especially metal, which I love for its energy and complexity.</p>
+<p><img alt="Drumming" src="/static/drum.jpg" /></p>
+<h2>🔗 Connect</h2>
+<ul>
+<li><a href="https://github.com/smartlizardpy">GitHub</a></li>
+<li><a href="#">YouTube</a></li>
+</ul>
+        </div>
+        <h2>Recent Posts</h2>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/5.html">How My Snake AI Learned to Starve Itself</a></h2>
+            <p>Training reinforcement learning on Snake and watching it spiral into failure.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/1.html">I Tried Building a Smart Mirror and Accidentally Summoned My To-Do List</a></h2>
+            <p>A Raspberry Pi smart mirror project that turned into a productivity monster.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/4.html">I Built a Meme Classifier Because Why Not</a></h2>
+            <p>Using AI to classify memes. It kinda works, kinda broke the internet.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/3.html">From Trash to Dashboard: I Made a Server Out of Old Tech</a></h2>
+            <p>Turning an old mini-PC into a local MQTT-powered data dashboard with style.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/6.html">Home Internet? Nah, I Built a Pirate Radio Station (Just for Science)</a></h2>
+            <p>Broadcasting music from my Raspberry Pi and annoying only myself.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+        <div class="post">
+            
+            <h2><a href="../posts/2.html">How I Made My Music Player Say 'Next Song, Loser'</a></h2>
+            <p>Text-to-speech + music + chaos. An audio-reactive web player with attitude.</p>
+            <div class="meta">2025-06-23</div>
+        </div>
+        
+    </div>
+    <p>© 2025 Ozan Kaygusuz – All Rights Reserved
+    </p>
+</body>
+
+</html>

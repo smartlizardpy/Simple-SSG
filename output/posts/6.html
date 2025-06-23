@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Internet? Nah, I Built a Pirate Radio Station (Just for Science)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--spacing);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+        }
+
+        article img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        article h2,
+        article h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .meta {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav><a href="/">← Back to Blog</a></nav>
+
+        <h1>Home Internet? Nah, I Built a Pirate Radio Station (Just for Science)</h1>
+        <div class="meta">2025-06-23</div>
+
+        <article>
+            <h1>Home Internet? Nah, I Built a Pirate Radio Station (Just for Science)</h1>
+<p>Because why stream music legally when you can broadcast it locally like it’s 1985?</p>
+<h2>📻 The Rig</h2>
+<ul>
+<li>Raspberry Pi Zero W</li>
+<li>Icecast2 server</li>
+<li>Liquidsoap to manage stream logic</li>
+<li>LAN-only setup (I’m not going to jail, thanks)</li>
+</ul>
+<h2>🎧 What It Plays</h2>
+<ul>
+<li>Handpicked MP3s</li>
+<li>TTS DJ intros between tracks</li>
+<li>Occasionally yells "You're listening to Radio Chaos!"</li>
+</ul>
+<h2>🚓 The Legal Stuff</h2>
+<p><strong>Don’t broadcast over FM.</strong><br />
+But streaming inside your home LAN = totally fine (like yelling at your own walls).</p>
+<h2>🧪 Features</h2>
+<ul>
+<li>Web client + cover art</li>
+<li><code>/api/next</code> to skip tracks via browser</li>
+<li><code>/nowplaying</code> JSON endpoint for nerd cred</li>
+</ul>
+<hr />
+<p>Is it useful? Not really.<br />
+Is it fun? <strong>Absolutely.</strong></p>
+<p>Coming soon: Local radio game nights.</p>
+        </article>
+    </div>
+</body>
+
+</html>

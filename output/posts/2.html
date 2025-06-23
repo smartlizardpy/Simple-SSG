@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How I Made My Music Player Say 'Next Song, Loser'</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --text: #111;
+            --muted: #666;
+            --link: #0077cc;
+            --bg: #fff;
+            --max-width: 720px;
+            --spacing: 1.5rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            padding: var(--spacing);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: auto;
+        }
+
+        nav {
+            margin-bottom: 2rem;
+        }
+
+        nav a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-bottom: 2rem;
+        }
+
+        article p {
+            margin-bottom: 1.2rem;
+        }
+
+        article img {
+            max-width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        article h2,
+        article h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #111;
+                color: #eaeaea;
+            }
+
+            nav a {
+                color: #66ccff;
+            }
+
+            .meta {
+                color: #aaa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav><a href="/">← Back to Blog</a></nav>
+
+        <h1>How I Made My Music Player Say 'Next Song, Loser'</h1>
+        <div class="meta">2025-06-23</div>
+
+        <article>
+            <h1>How I Made My Music Player Say "Next Song, Loser"</h1>
+<p>You know what's missing from most music players? <strong>Trash talk.</strong></p>
+<h2>🎵 The Stack</h2>
+<ul>
+<li>HTML/JS front end with Web Audio API</li>
+<li>Local Python Flask server with endpoints like <code>/api/next</code></li>
+<li>TTS via gTTS or ElevenLabs</li>
+<li>Animated bars that bounce with the beat</li>
+<li>Background images and playlist queue</li>
+</ul>
+<h2>💬 The Feature</h2>
+<p>After each song, a TTS voice says something like:</p>
+<blockquote>
+<p>“That was mid. Let’s try again.”</p>
+</blockquote>
+<p>or</p>
+<blockquote>
+<p>“Skipping… because you clearly have no taste.”</p>
+</blockquote>
+<h2>😎 Why Tho?</h2>
+<p>Because it’s funny.<br />
+Because music is too serious.<br />
+Because you can.</p>
+<h2>✅ What’s Next?</h2>
+<ul>
+<li>Let users upload insult packs</li>
+<li>Auto-meme overlay on music</li>
+<li>Discord integration?</li>
+</ul>
+<p>Tired of boring players? Build one that <strong>judges you in stereo.</strong></p>
+        </article>
+    </div>
+</body>
+
+</html>

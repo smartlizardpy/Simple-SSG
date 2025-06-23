@@ -1,0 +1,19 @@
+{
+    "site_name": "Ozan Kaygusuz's Blog",
+    "type": "blog",
+    "description": "A blog about awesome things.",
+    "author": "Ozan Kaygusuz",
+    "author_Description": "Designer, Developer & Photographer",
+    "navbar": [
+        {
+            "name": "Home",
+            "url": "/"
+        },
+        {
+            "name": "Projects",
+            "url": "/projects.html"
+        }
+       
+    ]
+
+}
