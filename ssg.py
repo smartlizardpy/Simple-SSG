@@ -112,5 +112,5 @@ for filename in os.listdir("pages"):
                         shutil.rmtree(dst_static)
                     shutil.copytree(src_static, dst_static)
            
-if sys.argv[1] == "--preview"
+if sys.argv[1] == "--preview":
     os.system('cd output && python3 -m http.server')
