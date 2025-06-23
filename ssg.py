@@ -114,3 +114,5 @@ for filename in os.listdir("pages"):
            
 if sys.argv[1] == "--preview":
     os.system('cd output && python3 -m http.server')
+else:
+    pass
