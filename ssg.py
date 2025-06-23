@@ -3,8 +3,7 @@ import markdown
 import json
 from jinja2 import Template
 import yaml
-import webbrowser
-import subprocess
+import sys
 import shutil
 # Load config
 config = json.load(open("config.json"))
@@ -113,5 +112,5 @@ for filename in os.listdir("pages"):
                         shutil.rmtree(dst_static)
                     shutil.copytree(src_static, dst_static)
            
-
-os.system('cd output && python3 -m http.server')
+if sys.argv[1] == "--preview"
+    os.system('cd output && python3 -m http.server')
